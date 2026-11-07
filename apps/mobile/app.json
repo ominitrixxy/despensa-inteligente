@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Despensa Inteligente",
+    "slug": "despensa-inteligente",
+    "version": "0.1.0",
+    "scheme": "despensa",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.despensa.inteligente"
+    },
+    "android": {
+      "package": "app.despensa.inteligente"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        { "cameraPermission": "Permita o acesso à câmera para escanear o código de barras dos produtos." }
+      ],
+      [
+        "expo-notifications",
+        { "color": "#2E7D32" }
+      ]
+    ],
+    "extra": {
+      "eas": { "projectId": "SUBSTITUA-PELO-PROJECT-ID-DO-EAS" }
+    }
+  }
+}

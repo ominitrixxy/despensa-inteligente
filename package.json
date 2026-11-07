@@ -1,0 +1,18 @@
+{
+  "name": "despensa-inteligente",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Despensa Inteligente - controle de validade de alimentos e redução de desperdício",
+  "scripts": {
+    "infra:up": "docker compose up -d",
+    "infra:down": "docker compose down",
+    "api:dev": "pnpm --filter @despensa/api start:dev",
+    "api:test": "pnpm --filter @despensa/api test",
+    "mobile:start": "pnpm --filter @despensa/mobile start",
+    "lint": "pnpm -r lint"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.12.0"
+}
